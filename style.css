@@ -277,32 +277,64 @@ footer {
 
 /* responsive design start */
 @media only screen and (max-width: 500px) {
-  header {
-    width: 480px;
-    height: 695px;
-  }
-  nav {
+  .player {
     position: absolute;
-    width: 322.98px;
-    height: 32.88px;
-    left: 16px;
-    top: 33px;
+    width: 330px;
+    height: 474px;
+    left: 15px;
+    top: 742px;
   }
-  .nav-bar {
-    display: none;
+  .grid-container {
+    grid-template-columns: 1fr;
   }
-  .heading-body {
+  .club {
     position: absolute;
-    width: 278px;
-    height: 138px;
-    left: 16px;
-    top: 112px;
-    display: flex;
+    width: 329px;
+    left: 15px;
+    top: 6900px;
+  }
+  .box-container {
+    grid-template-columns: 1fr;
+  }
+  .tournament {
+    position: absolute;
+    width: 329px;
+    left: 15px;
+    top: 13100px;
+  }
+  .high-light {
+    position: absolute;
+    left: 15px;
+    width: 329px;
+    height: 299px;
+    top: 11400px;
+  }
+  .flex-highlight {
     flex-direction: column;
   }
-  .header-img img {
+  .left-highlight {
     width: 329px;
-    height: 259.17px;
+    height: 299px;
+  }
+  .left-highlight h1 {
+    font-size: 25px;
+  }
+  .right-highlight img {
+    width: 328px;
+    height: 248px;
+  }
+  .heading1 {
+    font-size: 32px;
+  }
+  footer {
+    position: absolute;
+    width: 329px;
+    left: 15px;
+    top: 15700px;
+  }
+  .logo img {
+    width: 271px;
+    height: 63px;
   }
 }
 
