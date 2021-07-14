@@ -1,6 +1,10 @@
 :root {
   --color: #2d25a0;
   --color1: #e02c6d;
+  --icon: rgb(22, 157, 211);
+}
+html {
+  scroll-behavior: smooth;
 }
 * {
   margin: 0;
@@ -157,22 +161,12 @@ nav {
 }
 
 /* highlight end */
-.logo img {
-  position: absolute;
-  width: 483.87px;
-  height: 110px;
-  left: 482px;
-  top: 4300px;
-  transition: 0.2s;
-}
-.logo img:hover {
-  transform: scale(1.05);
-}
+
 /* club start */
 .club {
   position: absolute;
   left: 120px;
-  top: 4500px;
+  top: 4300px;
   transition: 0.2s;
   width: 1160px;
 }
@@ -206,6 +200,7 @@ nav {
 .box img {
   width: 100%;
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -213,3 +208,102 @@ a {
   font-size: 15px;
 }
 /* club end */
+/* tournaments start */
+
+.tournament {
+  position: absolute;
+  left: 120px;
+  top: 6050px;
+  transition: 0.2s;
+  width: 1160px;
+}
+.tournament h1 {
+  color: #187c96;
+}
+/* tournaments end */
+/* footer start */
+footer {
+  position: absolute;
+  left: 482px;
+  top: 7150px;
+}
+.logo img {
+  width: 483.87px;
+  height: 110px;
+  transition: 0.2s;
+}
+.logo img:hover {
+  transform: scale(1.05);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  width: 270px;
+  justify-content: space-around;
+}
+.fa-facebook {
+  color: var(--icon);
+  transition: 0.2s;
+}
+
+.fa-facebook-messenger {
+  color: var(--icon);
+}
+.fa-twitter {
+  color: var(--icon);
+}
+.fa-linkedin {
+  color: var(--icon);
+}
+.fa-facebook:hover,
+.fa-facebook-messenger:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover {
+  color: rgb(13, 124, 168);
+  transform: scale(1.05);
+}
+.copyright {
+  margin-top: 2%;
+  padding: 2%;
+}
+.copy {
+  color: rgb(53, 49, 49);
+}
+/* footer end */
+
+/* responsive design start */
+@media only screen and (max-width: 500px) {
+  header {
+    width: 480px;
+    height: 695px;
+  }
+  nav {
+    position: absolute;
+    width: 322.98px;
+    height: 32.88px;
+    left: 16px;
+    top: 33px;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .heading-body {
+    position: absolute;
+    width: 278px;
+    height: 138px;
+    left: 16px;
+    top: 112px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-img img {
+    width: 329px;
+    height: 259.17px;
+  }
+}
+
+/* responsive design end */
