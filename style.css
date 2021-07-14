@@ -64,27 +64,20 @@ nav {
   align-items: center;
 }
 .header-content {
-  position: absolute;
   width: 485px;
-  left: 156px;
-  top: 200px;
+  margin-top: 20%;
   font-size: 27px;
   font-weight: 700;
   color: white;
-}
-.position {
-  position: absolute;
-  top: 464px;
-  left: 156px;
+  margin-bottom: 10px;
 }
 .header-img img {
   width: 556px;
   height: 438px;
-  position: absolute;
+  margin-top: 20%;
+  margin-right: 2%;
   width: 33.36rem;
   height: 26.28rem;
-  left: 42rem;
-  top: 9.18rem;
   transition: 0.5s;
 }
 .header-img img:hover {
@@ -225,7 +218,7 @@ a {
 footer {
   position: absolute;
   left: 482px;
-  top: 7150px;
+  top: 7250px;
 }
 .logo img {
   width: 483.87px;
@@ -277,6 +270,40 @@ footer {
 
 /* responsive design start */
 @media only screen and (max-width: 500px) {
+  /* heading start */
+
+  header {
+    width: 480px;
+  }
+  nav {
+    width: 442px;
+  }
+  .login {
+    margin: 0 auto;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .left-content {
+    margin-left: 35px;
+  }
+  .header-content h1 {
+    font-size: 37px;
+  }
+  .heading-body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+  }
+
+  .header-img img {
+    width: 329px;
+    height: 259.17px;
+    margin-right: 20%;
+  }
+  /* heading end  */
+  /* player start */
   .player {
     position: absolute;
     width: 330px;
@@ -287,6 +314,8 @@ footer {
   .grid-container {
     grid-template-columns: 1fr;
   }
+  /* player end  */
+  /* club start */
   .club {
     position: absolute;
     width: 329px;
@@ -296,12 +325,9 @@ footer {
   .box-container {
     grid-template-columns: 1fr;
   }
-  .tournament {
-    position: absolute;
-    width: 329px;
-    left: 15px;
-    top: 13100px;
-  }
+  /* club end  */
+
+  /* high light start  */
   .high-light {
     position: absolute;
     left: 15px;
@@ -326,16 +352,27 @@ footer {
   .heading1 {
     font-size: 32px;
   }
+  /* highlight end  */
+  /* tonament start  */
+  .tournament {
+    position: absolute;
+    width: 329px;
+    left: 15px;
+    top: 13100px;
+  }
+  /* tunament end  */
+  /* footer start  */
   footer {
     position: absolute;
     width: 329px;
     left: 15px;
-    top: 15700px;
+    top: 15800px;
   }
   .logo img {
     width: 271px;
     height: 63px;
   }
+  /* footer end  */
 }
 
 /* responsive design end */
